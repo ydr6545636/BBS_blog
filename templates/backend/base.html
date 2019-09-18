@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>博客后台管理 - 博客园</title>
+    <title>Appsupport管理 - 问题记录</title>
 
     <link rel="stylesheet" href="/static/blog/bs/css/bootstrap.css">
     <script src="/static/js/jquery-3.2.1.min.js"></script>
@@ -13,7 +13,7 @@
 
 <div class="header">
     <p class="title">
-        <span class="my_title"><a href="/index/" >GEEK</a></span>
+        <span class="my_title"><a href="/index/" >Cimpress</a></span>
         后台管理
 
         <a class="info" href="/logout/">注销</a>
@@ -36,7 +36,10 @@
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                     <div class="panel-body">
-                        <p><a href="/cn_backend/add_article/">添加文章</a></p>
+                        <p><a href="/cn_backend/add_article/">添加问题</a></p>
+                        <p><a href="/cn_backend/add_article/">添加1</a></p>
+                        <p><a href="/cn_backend/add_article/">添加2</a></p>
+                        <p><a href="/cn_backend/add_article/">添加3</a></p>
                     </div>
                 </div>
             </div>
@@ -52,10 +55,10 @@
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
                                                           data-toggle="tab">文章</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
-                                           data-toggle="tab">日记</a></li>
-                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">眼镜</a>
+                                           data-toggle="tab">1</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">2</a>
                 </li>
-                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">相册</a>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">3</a>
                 </li>
             </ul>
 
@@ -63,32 +66,18 @@
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="home">
 
-                    {% block content %}
+                   {% block content %}
 
                     {% endblock %}
-
-
                 </div>
                 <div role="tabpanel" class="tab-pane" id="profile">
-
-                    <img src="/static/blog/img/meinv2.jpg" alt="">
-                    <img src="/static/blog/img/meinv3.jpg" alt="">
-                    <img class="pull-right" src="/static/blog/img/meinv.jpg" alt="">
+                    <img width="180" height="180" src="/static/blog/img/meinv1.jpg" alt="">
                 </div>
                 <div role="tabpanel" class="tab-pane" id="messages">
-
-                    <img width="180" height="180" src="/static/blog/img/hashiqi2.jpg" alt="">
-
-                    <img width="180" height="180" src="/static/blog/img/dogg4.jpg" alt="">
-                    <img width="180" height="180" src="/static/blog/img/linhaifeng.jpg" alt=""><br>
-                    <img width="180" height="180" src="/static/blog/img/dogg3.jpeg" alt="">
-                    <img width="180" height="180" src="/static/blog/img/dogge2.jpg" alt="">
-
-                    <img width="180" height="180" src="/static/blog/img/dogg5.jpg" alt="">
-
+                    <img width="180" height="180" src="/static/blog/img/meinv2.jpg" alt="">
                 </div>
                 <div role="tabpanel" class="tab-pane" id="settings">
-
+                    <img width="180" height="180" src="/static/blog/img/meinv3.jpg" alt="">
                 </div>
             </div>
 

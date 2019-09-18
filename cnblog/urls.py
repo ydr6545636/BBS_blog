@@ -25,6 +25,8 @@ urlpatterns = [
     # 后台管理url
     re_path("cn_backend/$", views.cn_backend, name='cn_backend'),
     re_path("cn_backend/add_article/$", views.add_article),
+    #修改密码url
+    re_path('^(?P<username>\w+)/edit_password/(?P<usr_id>\d+)$', views.edit_password),
     # 初始化测试数据
     path('supreme/', views.supreme),
     # 点赞

@@ -83,11 +83,11 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         # 'NAME':'myblog', # 要连接的数据库，连接前需要创建好
-        'NAME': 'geek',  # 要连接的数据库，连接前需要创建好
+        'NAME': 'ycblog',  # 要连接的数据库，连接前需要创建好
         'USER': 'root',  # 连接数据库的用户名
-        'PASSWORD': '',  # 连接数据库的密码
-        'HOST': '127.0.0.1',  # 连接主机，默认本级
-        'PORT': 3306,  # 端口 默认3306
+        'PASSWORD': 'ydr6545636',  # 连接数据库的密码
+        'HOST': 'localhost',  # 连接主机，默认本级
+        'PORT': 3306,  # 端口 默认3300
         # 'OPTIONS': {
         #     "init_command": "SET foreign_key_checks = 0;",
         # }
@@ -145,3 +145,6 @@ EMAIL_HOST_USER = '1415940604@qq.com'  # 帐号
 EMAIL_HOST_PASSWORD = 'thypyeprhbsjbaai'  # 密码
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 EMAIL_USE_SSL = True
+
+#修改loginurl在非登陆的情况下，会自动跳转到登陆页面
+LOGIN_URL = '/login/'

@@ -1,6 +1,6 @@
  <div>
     <div class="panel panel-warning">
-                <div class="panel-heading">我的标签</div>
+                <div class="panel-heading">标签</div>
                 <div class="panel-body">
 
                     {% for tag in tag_list %}
@@ -14,7 +14,7 @@
             </div>
 
     <div class="panel panel-danger">
-        <div class="panel-heading">随笔分类</div>
+        <div class="panel-heading">分类</div>
         <div class="panel-body">
             {% for cate in cate_list %}
                 <p><a href="/{{ username }}/category/{{ cate.0 }}">{{ cate.0 }}({{ cate.1 }})</a></p>
@@ -23,7 +23,7 @@
     </div>
 
     <div class="panel panel-success">
-        <div class="panel-heading">随笔归档</div>
+        <div class="panel-heading">归档</div>
         <div class="panel-body">
             {% for date in date_list %}
                 <p><a href="/{{ username }}/archive/{{ date.0 }}">{{ date.0 }}({{ date.1 }})</a></p>

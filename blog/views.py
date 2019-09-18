@@ -308,7 +308,7 @@ def comment(request):
     t = threading.Thread(target=send_mail, args=("您的文章%s新增了一条评论内容" % article_obj.title,
                                                  content,
                                                  settings.EMAIL_HOST_USER,
-                                                 ["hyc554@gmail.com"]))
+                                                 ["523718175@qq.com"]))
     t.start()
     return JsonResponse(response)
 
@@ -421,3 +421,7 @@ def edit_article(request, article_id):
         return redirect("/cn_backend/")
 
     return render(request, 'backend/edit.html', {'article_obj': article_obj})
+
+
+def edit_password(request, user_id):
+    pass
